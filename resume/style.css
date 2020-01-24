@@ -1,0 +1,69 @@
+html {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif; /* Change font and ensure same on all pages*/
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+.sidebar {
+    min-height: 100%;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 25%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; /* Change to white afterwards */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    display: table;
+    float: left;
+}
+
+/* The navigation menu links */
+.sidebar a {
+    padding: 6px 8px 6px 10%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.profilepic {
+    width: 115px;
+    height: 115px;
+    border-radius: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Style page content */
+.main {
+    margin-left: 25%; /* Same as the width of the sidebar */
+    padding: 0px .5% 0px .5%;
+    position: absolute;
+    float: left;
+    display: block;
+    width: 74%;
+    height: 100%
+}
