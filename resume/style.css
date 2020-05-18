@@ -67,3 +67,99 @@ a {
     width: 74%;
     height: 100%
 }
+
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        min-height: 10%;
+        height: 10%; /* Full-height: remove this if you want "auto" height */
+        width: 100%; /* Set the width of the sidebar */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: rgb(136, 182, 243); /* Change to white afterwards */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 0px;
+        display: table;
+        float: left;
+    }
+
+    /* The navigation menu links */
+    .sidebar a {
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-left: 11%;
+        margin-right: 10%;
+        text-decoration: none;
+        font-size: 11px;
+        color: #818181;
+        display: inline-block;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidebar a:hover {
+        color: rgb(136, 182, 243);
+    }
+
+    .profilepic {
+        width: 0%;
+        height: 0%;
+        display: none;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: none;
+    }
+
+    .title {
+        font-size: 15px;
+        text-align: center;
+        display: grid;
+        margin-bottom: 2px;
+    }
+
+    /* Style page content */
+    .main {
+        margin-left: 1%; /* Same as the width of the sidebar */
+        margin-top: 20%;
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        height: 100%
+    }
+
+    .imagetext {
+        display:block;
+        align-items:center;
+        flex-direction: row;
+    }
+
+    .imagetext p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .imagetext img {
+        width: 50%;
+        margin-left: 24%;
+        margin-right: 25%;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .imagetext .sfpic {
+        display: none;
+    }
+
+    .welcome {
+        padding: 3% 6% 3% 6%;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .bottomparagraph {
+        display: flex;
+        padding: 5% 5% 5% 5%;
+    }
+  }
